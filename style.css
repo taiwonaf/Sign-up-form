@@ -155,14 +155,28 @@ footer {
     font-weight: 600;
     font-size: 12px;
     color: var(--Red);
+    display: none;
 }
 
 .error-logo {
     position: absolute;
     right: 20px;
     bottom: 16px;
+    display: none;
 }
 
+.input.active input {
+    border: 1px solid var(--Red);
+    color: var(--Red);
+}
+
+.input.active .error {
+    display: block;
+}
+
+.input.active .error-logo {
+    display: block;
+} 
 
 @media  (max-width: 1300px) {
     body {
@@ -206,4 +220,5 @@ footer {
     input {
         padding-left: 20px;
     }
+
 }
